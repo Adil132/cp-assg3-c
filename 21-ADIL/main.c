@@ -1,6 +1,6 @@
 /*
     Roll No: 21
-    Student Name: Adil Sayyed
+    Student Name: Sayyed Adil Dastagir 
     Program Title: Program to print nth Fibonacci Number
     
     Task Given By:
