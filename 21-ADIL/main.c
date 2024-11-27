@@ -1,41 +1,36 @@
 /*
     Roll No: 21
     Student Name: Sayyed Adil Dastagir 
-    Program Title: Program to print nth Fibonacci Number
+    Program Title: Program to print right triangle using asterisk
     
     Task Given By:
         -Roll No: 33
         -Student Name: Hasnain shaikh
 */
+
 #include <stdio.h>
 
-//function to print nth fibonacci number
+int main() {
+    int rows;
+    // Print a message to prompt user input.
+    printf("Input number of rows : ");
+    scanf("%d", &rows);
 
-int fib(int n){
-    
-    //base condition
-    if(n <= 1){
-        return n;
+    // Start a loop to generate rows of asterisks.
+    for (int i = 1; i <= rows; i++) {
+        for (int j = 1; j <= i; j++)
+            printf("*");  // Print an asterisk.
+
+        printf("\n");  // Move to the next line for the next row.
     }
-    int lastNum = fib(n-1);
-    int secLast = fib(n-2);
-    
-    return lastNum + secLast;
 }
 
-int main()
-{
-    int x, fibNum;
+/*OUTPUT
+Input number of rows : 5
+*
+**
+***
+****
+*****
 
-    printf("\t\t\tPrint Nth Fibonacci Number:\n\n\n");
-    
-    printf("Enter Number: ");
-    scanf("%d", &x);
-    
-    //calling funtion to find fibonacci number
-    fibNum = fib(x);
-    printf("%dth Fibonacci number is : %d", x, fibNum);
-    
-
-    return 0;
-}
+*/
